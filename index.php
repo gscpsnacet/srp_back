@@ -55,6 +55,7 @@
   <script src="app/feedctrl.js"></script>
   <script src="app/equipctrl.js"></script>
   <script src="app/goformctrl.js"></script>
+  <script src="app/goctrl.js"></script>
   <script src="app/galleryctrl.js"></script>
 
   <script src="app/newsCtrl.js"></script>
