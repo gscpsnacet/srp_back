@@ -1,0 +1,61 @@
+<div style="padding-right:3%;padding-left:3%">
+  <!--navigation start-->
+ <nav class="navbar navbar-inverse" style="margin-bottom:0px"  ng-controller="hostCtrl">
+      <div class="container-fluid">
+         <div class="navbar-header">
+           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+           </button>
+           <a class="navbar-brand" href="">Content Manipulator</a>
+         </div>
+         <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li>
+               <a href="#/dashboard">Dashboard</a>
+           </li>
+           <li>
+              <a href="#/feed">Edit Feed</a>
+          </li>
+          <li class="active"><a>Feed Input</a></li>
+            </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a class="btn" ng-click="logout();"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+          </ul>
+        </div>
+      </div>
+ </nav>
+<!--navigation end-->
+	<div class="page-content" class="container" >
+		<div class=".page-header">
+      <div >
+         <h3>Create a new Feed</h3>
+      </div>
+    </div>
+	</div>
+
+  <form class="form-horizontal">
+      <div class="form-group">
+        <label class="control-label col-sm-3" for="ename">Feed Title:</label>
+        <div class="col-sm-5">
+          <input class="form-control" id="ename" ng-model="feed.ftitle" placeholder="Enter the title of the feed">
+        </div>
+      </div>
+
+
+      <div class="form-group">
+        <label class="control-label col-sm-3" for="edesc">Feed description:</label>
+        <div class="col-sm-5">
+          <textarea class="form-control" id="edesc" ng-model="feed.fdesc" rows="5" placeholder="Enter the description"></textarea>
+        </div>
+      </div>
+
+      <div class="form-group">
+         <div class="col-sm-offset-7 col-sm-10">
+           <button type="submit" class="btn btn-default btn-lg" ng-click="post();" >Submit</button>
+         </div>
+      </div>
+  </form>
+
+</div>

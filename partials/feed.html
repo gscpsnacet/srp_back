@@ -1,0 +1,57 @@
+<h2>Feed</h2>
+<div style="padding-right:3%;padding-left:3%">
+	
+  <!--navigation start-->
+ <nav class="navbar navbar-inverse" style="margin-bottom:0px"  ng-controller="hostCtrl">
+      <div class="container-fluid">
+         <div class="navbar-header">
+           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+           </button>
+           <a class="navbar-brand" href="">Content Manipulator</a>
+         </div>
+         <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li>
+               <a href="#/dashboard">Dashboard</a>
+              </li>
+              <li class="active"><a>Edit Feeds</a></li>
+            </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a class="btn" ng-click="logout();"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+          </ul>
+        </div>
+      </div>
+ </nav>
+<!--navigation end-->
+
+
+    <div class=".page-header">
+      <div >
+         <h2 class="pull-left">List of Feeds available in the web page</h2>
+      </div>
+       <button class="btn btn-lg btn-warning pull-right" ng-click="gotocreatenewfeed();">Create new Feed</button>
+    </div>
+    <table class="table table-striped table-hover">
+       <thead >
+        <tr>
+            <th>Feed</th>
+            <th>Uid</th>
+            <th></th>
+        </tr>
+       </thead> 
+       <tbody >
+          <tr ng-repeat="feed in feed_list">
+            <td>{{feed.ftitle}}</td>
+            <td>{{feed.uid}}</td>
+            <td><button class="btn btn-md btn-danger" ng-click="deletefeed(feed.fid);">Delete</button></td>
+          </tr>
+       </tbody>
+    </table>
+   
+
+    <!--testing layout -->
+
+</div>
