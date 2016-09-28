@@ -52,8 +52,10 @@
   <script src="app/authCtrl.js"></script>
   <script src="app/hostCtrl.js"></script>
   <script src="app/GeneralCtrl.js"></script>
-    <script src="app/feedctrl.js"></script>
-    <script src="app/galleryctrl.js"></script>
+  <script src="app/feedctrl.js"></script>
+  <script src="app/equipctrl.js"></script>
+  <script src="app/goformctrl.js"></script>
+  <script src="app/galleryctrl.js"></script>
 
   <script src="app/newsCtrl.js"></script>
     <script src="app/carouselctrl.js"></script>

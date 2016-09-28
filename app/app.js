@@ -52,7 +52,7 @@ app.config(['$routeProvider',
             .when('/goform', {
                 title: 'Goform',
                 templateUrl: 'partials/goform.html',
-                controller: 'goCtrl'
+                controller: 'goformCtrl'
             })
             .when('/goformip', {
                 title: 'GoformIp',
